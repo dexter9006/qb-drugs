@@ -14,7 +14,7 @@ local Translations = {
         dealer_not_exists = "Ce dealeur n'existe pas",
         no_dealers = "Aucun dealeur n'a été placé",
         dealer_not_exists_command = "Dealeur %{dealerName} n'existe pas",
-        delivery_fail = "",
+        delivery_fail = "Je n'ai pas de livraison à te confier pour le moment !",
     },
     success = {
         helped_player = "Vous avez aidé un joueur",
