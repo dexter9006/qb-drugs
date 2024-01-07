@@ -1,10 +1,10 @@
 Config = {
-    Debug = true,                                          -- true / false - Currently prints the vector3 and label of locations when requesting a delivery
+    Debug = false,                                          -- true / false - Currently prints the vector3 and label of locations when requesting a delivery
     NearbyDeliveries = true,                               -- true / false - Do you want deliveries to be within a certain amount of units?
     DeliveryWithin = 2000,                                 -- int (Default 2000) - How many units do you want the delivery location to be within from the player when making a delivery request?
     Dealers = {},
     UseTarget = GetConvar('UseTarget', 'false') == 'true', -- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
-    PoliceCallChance = 99,                                 --in percentage (if 99, theres the 99% to call the police)
+    PoliceCallChance = 75,                                 -- in percentage (if 99, theres the 99% to call the police)
 
     -- Shop Config
     Products = {
@@ -146,7 +146,7 @@ Config = {
     },
 
     -- Delivery Config
-    UseMarkedBills = false,     -- true for marked bills, false for cash
+    UseMarkedBills = true,     -- true for marked bills, false for cash
     DeliveryRepGain = 1,        -- amount of rep gained per delivery
     DeliveryRepLoss = 1,        -- amount of rep lost if delivery wrong or late
     PoliceDeliveryModifier = 2, -- amount to multiply active cop count by
