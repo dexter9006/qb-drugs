@@ -30,7 +30,10 @@ end
 local function PoliceCall()
     local random = math.random(1, 100)
     if random <= Config.PoliceCallChance then
-        TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+        --TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+        -- Vitto
+        exports['ps-dispatch']:DrugSale()
+        --
     end
 end
 
